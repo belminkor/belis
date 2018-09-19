@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <title>Kontakt</title>
+  <meta charset="utf-8">
+  <meta  lang="no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="skriptaKontakt.js"></script>
+</head>
+
+<body class="boja">
+  <nav id="header" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-left" href="index.html" id="logo"><img src="slike/br.png" class="img-responsive"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Forside</a></li>
+
+         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Våre eiendommer <span class="caret"></span></a>
+        <ul id="povecaj" class="dropdown-menu">
+          <li><a href="offers.html">Alle Objekte</a></li>
+          <li><a href="dubrovnik.html">Dubrovnik</a></li>
+          <li><a href="OmradeDubrovnik.html">Område Dubrovnik</a></li>
+          <li><a href="mostar.html">Mostar</a></li>
+          <li><a href="sarajevo.html">Sarajevo</a></li>
+          <li><a href="#">Andre</a></li>
+        </ul>
+      </li>
+
+
+     <!--   <li><a href="offers.html">Våre eiendommer</a></li><!-->
+        <li><a href="partners.html">Andre tjenester</a></li>
+        <li class="active"><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  
+  <div id="header-container">
+  <div class="header-image">
+    <div class="naslovKontakt">
+      <h1 id="naslovK">Våre medarbeidere</h1>
+      <p id="naslovK2">VI SKAL VÆRE DIN FORETRUKNE PARTNER FOR FERIEVALGET DITT. VI YTER PERSONLIG SERVICE, <br>HAR KONTAKT MED ALLE VÅRE UTLEIERE OG KAN REAGERE RASKT. EN AV VÅRE MEDARBEIDERE STÅR ALLTID KLAR FOR Å HJELPE.</p>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+ 
+
+         <p id="idiUCentar1" > Kontakt Info:</p>
+          <br/>
+          <br/>
+
+      <div id="kontakti" class="col-sm-5" style="text-align: left">
+       </br>
+
+        <p id="KontaktLijevo"><span class="glyphicon glyphicon-user"></span> Miralem Becirovic - Beli</p>
+            <p id="KontaktLijevo"><span class="glyphicon glyphicon-phone"></span> (+47) 984 50 534</p>
+            <p id="KontaktLijevo"><span class="glyphicon glyphicon-envelope"></span> bmiralem@hotmail.com</p>
+            <br/><br/>
+      </div>
+
+      <div id="kontakti" class="col-sm-7" style="text-align:right;">
+
+        <br/>
+        
+
+          <p id="KontaktDesno"><span class="glyphicon glyphicon-user"></span> Jasmina Zugor</p>
+            <p id="KontaktDesno"><span class="glyphicon glyphicon-phone"></span> (+47) 915 94 460</p>
+            <p id="KontaktDesno"><span class="glyphicon glyphicon-envelope"></span> jasminazugor@hotmail.com</p>
+            <br/>
+            <br/><br/>
+      
+    </div>
+
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="adresa" class="col-sm-12">
+        <p><span class="glyphicon glyphicon-map-marker"></span> Ferieformidler Belis Reiser, LĂ¸renveien 46, 0585 Oslo</p>  
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="map"></div>
+      </div>
+    </div>
+      
+    </div>
+  </div>
+
+  <br/><br/><br/><br/>
+
+ <footer class="footer">
+  <br>
+      <div class="container">
+        
+        <a href="https://www.facebook.com/">
+          <img id="fb" src="fblogo.png" />
+        </a>
+        
+        <a href="https://twitter.com/?lang=en">
+          <img id="tw" src="tw.gif" />
+        </a>
+        
+        <a href="indeks_kontakt.html">
+          <img id="mail" src="mail.png" />
+        </a>
+        <br/><br/>
+        <span> © 2017 Ferieformidler BELIS REISER </span> 
+      </div>
+      
+  </footer> 
+
+
+
+  <script>
+          function initMap() {
+          var uluru = {lat:  59.93298967, lng: 10.78712583};
+            var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV1hE8detGsN92RjtCPml5h0OiuWwKy2Q&callback=initMap">
+    </script>
+
+</body>
+</html>

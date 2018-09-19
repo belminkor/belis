@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belis</title>
+  <meta charset="utf-8">
+  <meta  lang="no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="script.js"></script>
+
+  	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="skriptaPocetna.js"></script>
+</head>
+<body>
+	
+	<nav id="header" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-left" href="index.html" id="logo"><img src="slike/br.png" class="img-responsive" id="logo2"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html">Forside</a></li>
+
+     
+  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Våre eiendommer <span class="caret"></span></a>
+        <ul id="povecaj" class="dropdown-menu">
+          <li><a href="offers.html">Alle Objekte</a></li>
+          <li><a href="dubrovnik.html">Dubrovnik</a></li>
+          <li><a href="OmradeDubrovnik.html">Område Dubrovnik</a></li>
+          <li><a href="mostar.html">Mostar</a></li>
+          <li><a href="sarajevo.html">Sarajevo</a></li>
+          <li><a href="#">Andre</a></li>
+        </ul>
+      </li>
+
+
+       <!-- <li><a href="offers.html">Våre eiendommer</a></li><!-->
+        <li><a href="partners.html">Andre tjenester</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	
+
+	
+  
+	<div class="galerija">
+            <ul class="rslides">
+            <li> <img src="dubrovnik2.jpg">   </li>
+            <li> <img src="budva2.jpg">   </li>
+            <li> <img src="mostar2.jpg">   </li>
+            </ul>
+    </div> 
+    </div>
+    </div>
+
+    <div id="drugi" class="jumbotron text-center">
+  		<h1 id="velicinaSlova1">Belis Reiser</h1> 
+  		<p id="velicinaSlova2">Vi skreddersyr din drømmeferie</p> 
+  
+	</div>
+
+
+<div id="boja" class="container-fluid text-center" style="background-color: #E4F9FB">
+  <h1 style="font-family: 'Gabriola'; font-size: 45px;">HVORFOR VELGE OSS</h1>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span id="gly1" class="glyphicon glyphicon-home"></span>
+      <h3 style="font-family: 'Gabriola'; font-size: 35px;">MANGE TITALLS EIENDOMMER</h3>
+      <p style="font-size: 25px;">Utflukter til Bosnia, Montenegro, <br/>Fish-picnic
+		Dagsturer, Seiling ...</p>
+    </div>
+    <div class="col-sm-4">
+      <span id="gly3" class="glyphicon glyphicon-thumbs-up"></span>
+      <h3 style="font-family: 'Gabriola'; font-size: 35px;">FORNØYELSESGARANTI</h3>
+      <p style="font-size: 25px;">Vi garanterer at du blir fornøyd</p>
+    </div>
+    <div class="col-sm-4">
+      <span id="gly4" class="glyphicon glyphicon-phone-alt"></span>
+      <h3 style="font-family: 'Gabriola'; font-size: 35px;">ERFARING</h3>
+      <p style="font-size: 25px;">Lokal - kjennskap, direkte kontakt <br/>med eiere</p>
+    </div>
+  </div>
+</div>
+
+
+ <footer class="footer">
+  <br>
+      <div class="container">
+        
+        <a href="https://www.facebook.com/">
+          <img id="fb" src="fblogo.png" />
+        </a>
+        
+        <a href="https://twitter.com/?lang=en">
+          <img id="tw" src="tw.gif" />
+        </a>
+        
+        <a href="indeks_kontakt.html">
+          <img id="mail" src="mail.png" />
+        </a>
+        <br/><br/>
+        <span> © 2017 Ferieformidler BELIS REISER </span> 
+      </div>
+      
+  </footer> 
+
+
+
+
+
+
+
+<script>
+  $(function() {
+    $(".rslides").responsiveSlides({
+  auto: true,             // Boolean: Animate automatically, true or false
+  speed: 3500,            // Integer: Speed of the transition, in milliseconds
+  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+  pager: false,           // Boolean: Show pager, true or false
+  nav: false,             // Boolean: Show navigation, true or false
+  random: false,          // Boolean: Randomize the order of the slides, true or false
+  pause: false,           // Boolean: Pause on hover, true or false
+  pauseControls: false,    // Boolean: Pause when hovering controls, true or false
+  prevText: "Previous",   // String: Text for the "previous" button
+  nextText: "Next",       // String: Text for the "next" button
+  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+  manualControls: "",     // Selector: Declare custom pager navigation
+  namespace: "rslides",   // String: Change the default namespace used
+  before: function(){},   // Function: Before callback
+  after: function(){}     // Function: After callback
+});
+  });
+</script>
+
+</body>
+</html>
